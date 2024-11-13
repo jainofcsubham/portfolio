@@ -1,14 +1,21 @@
-import { Github, Linkedin, Mail, Code2, Cpu, Database, Layout } from 'lucide-react';
-import Hero from './components/Hero';
-import Experience from './components/Experience';
-import Stats from './components/Stats';
-import Education from './components/Education';
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Code2,
+  Cpu,
+  Database,
+  Layout,
+} from "lucide-react";
+import Hero from "./components/Hero";
+import Experience from "./components/Experience";
+import Stats from "./components/Stats";
+import Education from "./components/Education";
+import { GetInTouch } from "./components/GetInTouch";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
-
-
       <Hero />
 
       {/* About Section */}
@@ -17,12 +24,16 @@ function App() {
           <h2 className="text-3xl font-bold mb-12 text-center">About Me</h2>
           <div className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
             <p className="mb-6">
-              I'm a Senior Software Engineer with expertise in full-stack development and cloud architecture. 
-Passionate about crafting innovative business solutions and committed to continuous learning and technological advancement to optimize workflow efficiency.
+              I'm a Senior Software Engineer with expertise in full-stack
+              development and cloud architecture. Passionate about crafting
+              innovative business solutions and committed to continuous learning
+              and technological advancement to optimize workflow efficiency.
             </p>
             <p>
-              My experience includes leading development teams, building scalable applications, and mentoring junior developers. 
-              I've consistently improved development efficiency and product stability throughout my career.
+              My experience includes leading development teams, building
+              scalable applications, and mentoring junior developers. I've
+              consistently improved development efficiency and product stability
+              throughout my career.
             </p>
           </div>
         </div>
@@ -35,7 +46,9 @@ Passionate about crafting innovative business solutions and committed to continu
       {/* Skills Section */}
       <section id="skills" className="py-24 bg-blue-600">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center text-white">Technical Skills</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-white">
+            Technical Skills
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Code2 className="w-12 h-12 text-blue-600 mb-4" />
@@ -45,7 +58,9 @@ Passionate about crafting innovative business solutions and committed to continu
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Cpu className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Backend</h3>
-              <p className="text-gray-600">Java, Spring Boot, Node.js, Python</p>
+              <p className="text-gray-600">
+                Java, Spring Boot, Node.js, Python
+              </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Database className="w-12 h-12 text-blue-600 mb-4" />
@@ -105,57 +120,41 @@ Passionate about crafting innovative business solutions and committed to continu
       {/* Contact Section */}
       <section id="contact" className="py-24 bg-blue-600">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center text-white">Get in Touch</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-white">
+            Get in Touch
+          </h2>
           <div className="max-w-lg mx-auto">
             <div className="flex justify-center space-x-6 mb-8">
-              <a href="https://github.com/jainofcsubham" className="text-white hover:text-black transition-colors">
+              <a
+                href="https://github.com/jainofcsubham"
+                className="text-white hover:text-black transition-colors"
+                target="_blank"
+              >
                 <Github className="w-8 h-8" />
               </a>
-              <a href="https://linkedin.com/in/jainsubhamofc" className="text-white hover:text-black transition-colors">
+              <a
+                href="https://linkedin.com/in/jainsubhamofc"
+                className="text-white hover:text-black transition-colors"
+                target="_blank"
+              >
                 <Linkedin className="w-8 h-8" />
               </a>
-              <a href="mailto:jainofcsubham597@gmail.com" className="text-white hover:text-black transition-colors">
+              <a
+                href="mailto:jainofcsubham597@gmail.com"
+                className="text-white hover:text-black transition-colors"
+                target="_blank"
+              >
                 <Mail className="w-8 h-8" />
               </a>
             </div>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-white mb-1">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white mb-1">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white mb-1">Message</label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full border border-white hover:bg-white/10 text-white px-6 py-3 rounded-lg transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
+
+            <GetInTouch/>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-blue-600 text-white py-8 border-t">
         <div className="container mx-auto px-6 text-center">
           <p>© 2024 Subham Jain. All rights reserved.</p>
         </div>
