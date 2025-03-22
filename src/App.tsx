@@ -65,7 +65,7 @@ function App() {
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Database className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Database</h3>
-              <p className="text-gray-600">SQL, NoSQL, PostgreSQL</p>
+              <p className="text-gray-600">PostgreSQL, DynamoDB, MongoDB</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Layout className="w-12 h-12 text-blue-600 mb-4" />
@@ -148,7 +148,7 @@ function App() {
               </a>
             </div>
 
-            <GetInTouch/>
+            <GetInTouch />
           </div>
         </div>
       </section>
